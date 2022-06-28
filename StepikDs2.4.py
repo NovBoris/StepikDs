@@ -4,3 +4,22 @@
 # with open('dataset_24465_4.txt') as text, open('dataset_24465_4_copy.txt', 'w') as text_revers:
 #     x = text.readlines()
 #     text_revers.writelines(reversed(x))
+
+# Вам дана в архиве (ссылка) файловая структура, состоящая из директорий и файлов.
+#
+# Вам необходимо распаковать этот архив, и затем найти в данной в файловой структуре все директории,
+# в которых есть хотя бы один файл с расширением ".py".
+#
+# Ответом на данную задачу будет являться файл со списком таких директорий,
+# отсортированных в лексикографическом порядке.
+#
+#
+# import os
+# for current_dir, dirs, files in os.walk("main"):
+#     for i in files:
+#         if '.py' in i:
+#             print(current_dir)
+#             break
+
+# import shutil
+# shutil.rmtree('main')
