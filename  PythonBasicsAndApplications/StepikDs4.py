@@ -194,23 +194,23 @@
 #     a, b = input().split()
 #     print("Yes" if is_parent(b, a) else "No")
 
-class ExtendedStack(list):
-    def sum(self, *a):
-        # операция сложения
-        self.extend(a)
-        self.append(self.pop() + self.pop())
-    def sub(self):
-        # операция вычитания
-        self.append(self.pop() - self.pop())
-    def mul(self):
-        # операция умножения
-        self.append(self.pop() * self.pop())
-    def div(self):
-        # операция целочисленного деления
-        self.append(self.pop() // self.pop())
-x = ExtendedStack()
-print(x)
-x.sum(2, 4)
+# class ExtendedStack(list):
+#     def sum(self, *a):
+#         # операция сложения
+#         self.extend(a)
+#         self.append(self.pop() + self.pop())
+#     def sub(self):
+#         # операция вычитания
+#         self.append(self.pop() - self.pop())
+#     def mul(self):
+#         # операция умножения
+#         self.append(self.pop() * self.pop())
+#     def div(self):
+#         # операция целочисленного деления
+#         self.append(self.pop() // self.pop())
+# x = ExtendedStack()
+# print(x)
+# x.sum(2, 4)
 #
 # def test():
 #     ex_stack = ExtendedStack([1, 2, 3, 4, -3, 3, 5, 10])
